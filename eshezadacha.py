@@ -9,8 +9,9 @@ plt.plot(weeks, scenariyAlambda, 'o-', label='Сценарий А', linewidth=2,
 plt.plot(weeks, scenariyBlambda, 'o-', label='Сценарий Б(реальный)', linewidth=2, color='red')
 plt.ylabel('Сценарии А и Б')
 plt.xlabel('Недели')
-plt.axhline(y=0.8, color='gray', label='асимптота ответа на вопрос', linestyle='--')
-plt.axhline(y=0, color='blue', label='изначальная асимптота', linestyle='--')
+plt.axhline(y=0.8, color='gray', label='изначальная асимптота', linestyle='--')
+plt.axhline(y=0, color='blue', label='асимптота ответа на вопрос', linestyle='--')
+plt.axhline(y=0, color='blue', label='линия нулевой эффективности', linestyle='-')
 plt.legend()
 plt.show()
 
@@ -22,4 +23,3 @@ plt.show()
 # потому что не будет разницы между вносимыми ошибками и исправляемыми. Кривая станет прямой линией.
 # ------ВЫВОД------
 # сценарий А демонстрирует более высокую скорость затухания, чем скорость Б. За 10 недель эффективность отличается чуть ли не в 4 раза(0.085 у А и 0.278 у Б)
-# асимптота кароч вроде первая = 0.8, а где ответ на вопрос там 0, надо еще график построить
