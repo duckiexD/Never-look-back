@@ -11,7 +11,7 @@ plt.ylabel('Сценарии А и Б')
 plt.xlabel('Недели')
 plt.axhline(y=0.8, color='gray', label='изначальная асимптота', linestyle='--')
 plt.axhline(y=0, color='blue', label='асимптота ответа на вопрос', linestyle='--')
-plt.axhline(y=0, color='blue', label='линия нулевой эффективности', linestyle='-')
+plt.axhline(y=0, color='blue', label='линия нулевой эффективности', linewidth=3, linestyle='-')
 plt.legend()
 plt.show()
 
